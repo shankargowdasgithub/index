@@ -1,0 +1,212 @@
+body{
+    margin: 22px;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding-left: 50px;
+    justify-content: space-between;
+    background-color: #faf9f9;
+    padding: 10px;
+    
+}
+#logoimage{
+    height: 70px;
+    width: 70px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+   
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+}
+
+button {
+    background-color: transparent;
+    font-size: 16px;
+    color: rgb(12,12,12);
+    border: none;
+    cursor: pointer;
+}
+
+button i {
+    font-size: 24px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 10px;
+   
+}
+
+.backgroundimage{
+    position: relative;
+    height: 750px;
+    width: 100%;
+    background-image: url('hotel-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#inside-text-button{
+    position: absolute;
+    bottom: 20px;
+    font-family: sans-serif;
+    left: 20px;
+    cursor: pointer;
+    padding: 10px 70px;
+    background-image: repeating-linear-gradient(to right,black,white);
+    color: #ffffff;
+    border: none;
+    border-radius: 1px;
+
+}
+.content{
+    background-color: rgb(247, 243, 243);
+    height: 120px;
+    
+}
+
+#middle-text-paragraps{
+    padding: 20px;
+    background-color: rgb(192,189, 189);
+    display: flex;
+    height: 140px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.sub_paragraph{
+    width: 400px;
+    height: 300px;
+}
+
+.mid-band-total-div{
+    font-family: sans-serif;
+    padding-left: 30px;
+    height: 100%;
+    background-color: rgb(186, 177, 189);
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.main-parent-table{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    padding-top: 20px;
+}
+
+#sub-division-tables{
+    width: 300px;
+}
+
+#sub-images{
+    height: 200px;
+    width: 300px;
+}
+
+.second-table-specific{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
+}
+.second-table-button-specific{
+    display: flex;
+    margin-left: 95px;
+}
+
+#end-button{
+    background-color: black;
+    color: rgb(255,255,255);
+    padding: 10px 30px;
+}
+
+/*css for tablet*/
+
+@media(max-width:760px) {
+    .navbar{
+    flex-direction: column;
+    align-items: center;
+    }
+
+     #logoimage{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    ul li{
+       margin-right: 0;
+    }
+
+    #end-button{
+        font-size: 20px;
+        padding: 8px;
+    }
+    #middle-text-paragraps{
+        height: 250px;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0px;
+    }
+    #sub-images{
+        width: 200px;
+    }
+   .second-table-button-specific{
+    margin-left: 1px;
+   }
+
+    
+}
+
+/*css for mobiles*/
+
+@media (max-width:480px){
+    
+    #middle-text-paragraps{
+        height: 450px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub_paragraph{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .main-parent-table{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    #sub-division-tables{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    #end-button{
+        padding: 10px 20px;
+    }
+    .mid-band-total-div{
+        margin-top: 320px;
+    }
+}
